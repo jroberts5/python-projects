@@ -1,7 +1,17 @@
 import numpy as np
 
-l = [1,2,4]
-a = np.array([5,7,9])
+l1 = [1,2,4]
+l2 = [4,5,6]
+a = np.array([l1])
+b = np.array([l2])
 
-print(l)
-print(a)
+
+dot = 0
+for i in range(len(l1)):
+    dot += l1[i] * l2[i]
+print(dot)
+
+
+np_dot = np.dot(a,b)
+print(np_dot)
+
